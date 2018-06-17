@@ -1,10 +1,10 @@
 # myRetail-REST
 
-myRetail-REST is a RESTful application to make its internal data available to any number of client devices, from myRetail.com to native mobile apps. 
+myRetail-REST is a RESTful application which purpose is to make its internal data available to any number of client devices, from myRetail.com to native mobile apps. 
 
 The goal for this exercise is to create an end-to-end Proof-of-Concept for a products API, which will aggregate product data from multiple sources and return it as JSON to the caller. 
 
-The application aggregates it's data from:
+The application aggregates it's product data from:
 - A name lookup from redsky.target.com using an HTTP GET request
 - A pricing lookup from it's internal NoSQL MongoDb source.
 
@@ -19,7 +19,7 @@ The tools used for this application are:
 Clone the application using the command: `git clone https://github.com/nmoll/myRetail-REST.git`
 
 ### Installing and running MongoDb
-If you don't already have MongoDb installed, follow the instructions for your OS http://docs.mongodb.org/manual/installation/.
+If you don't already have MongoDb installed, follow the instructions for your OS at http://docs.mongodb.org/manual/installation/.
 
 Once  it is installed, run `mongo --host 127.0.0.1:27017` to begin using mongo.
 
