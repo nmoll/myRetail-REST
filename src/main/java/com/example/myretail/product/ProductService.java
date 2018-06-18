@@ -14,7 +14,7 @@ public class ProductService {
 	@Autowired
 	private ProductRestClient productRestClient;
 		
-	public Product findById(long id) {
+	public Product findById(long id) throws ProductNotFoundException {
 		
 		Product product = productRepository.findById(id);
 		

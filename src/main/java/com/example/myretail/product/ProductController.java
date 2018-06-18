@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
 
 	@Autowired
-	ProductService productService;
+	private ProductService productService;
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/{id}")
 	public ResponseEntity<Product> getProduct(@PathVariable("id") Long id) {
