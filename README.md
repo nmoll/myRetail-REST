@@ -21,7 +21,7 @@ Clone the application using the command: `git clone https://github.com/nmoll/myR
 ### Installing and running MongoDb
 If you don't already have MongoDb installed, follow the instructions for your OS at http://docs.mongodb.org/manual/installation/.
 
-Once  it is installed, run `mongo --host 127.0.0.1:27017` to begin using mongo.
+Once  it is installed, run `mongod` to start the mongo server. Then in a new terminal, run `mongo --host 127.0.0.1:27017`.
 
 ## Interacting with the Application
 Launch the application by running `Application.java` class.
