@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import com.example.myretail.exception.ProductNotFoundException;
+import com.example.myretail.exception.RestClientException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Component
@@ -41,7 +42,7 @@ public class ProductRestClient {
 			Map<String, Object> productDescription = (Map<String, Object>) itemDetails.get("product_description");
 			productName = (String) productDescription.get("title");
 		} catch (Exception e) {
-			throw new ProductNotFoundException();
+			throw new RestClientException(String.format("Error while getting product information for Product Id: %d", id));
 		}
 
 		return productName;
